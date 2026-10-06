@@ -6,4 +6,4 @@ Time = 150 #runnning checks for 1-150 minutes
 
 for Time in range (1, Time + 1, 15):   #range that tests will be ran
     if Time % 15 == 0:                # number must be divisible by 15 to run (every 15 mins)
-        print(f"min: Running Scanner Check") #notify user that check is running
+        print(f"{Time} mins: Running Scanner Check") #notify user that check is running
