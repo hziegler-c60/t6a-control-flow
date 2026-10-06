@@ -11,10 +11,10 @@
 Days = 30 #number of days in 30 day month
 
 for Days in range(1,Days +1): #30 day month range that sudits will be run
-    if Days % 3 == 0 and Days % 5 == 0: #full audit test 
+    if Days % 3 == 0 and Days % 5 == 0: #full audit test runs every 15 days
         print(f"Day {Days} FULL AUDIT")
-    elif Days % 5 == 0:                 #Scanner Audit Test
+    elif Days % 5 == 0:                 #Scanner Audit Test runs every 5 days
         print(f"Day {Days} Scanner Audit")
-    elif Days % 3 == 0:                 #Cycle Count Check
+    elif Days % 3 == 0:                 #Cycle Count Check runs every 3 days
         print(f"Day {Days} Cycle Count")
     else: print(f"Day {Days} Normal Day")#every other day runs normal
