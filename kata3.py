@@ -12,8 +12,10 @@
 aisle = [1,2,3]
 shelf = [1,2,3,4]
 
-for aisle in range(1, 3 +1):          # outer: aisles
-    for shelf in range(1, 4 +1):      # inner: shelves 
-        print(f"A{aisle}-S{shelf}")
+for aisle in range(1, 3+1):                    # outer: aisle 1
+    for shelf in range(1, 4 +1):              # inner: shelves
+          print(f"A{aisle}-S{shelf}", end=" ")
+    print()
+
 
 
